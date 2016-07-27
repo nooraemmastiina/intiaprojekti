@@ -6,7 +6,7 @@
 
 	<?php else : ?>
 
-	<!-- This content shows up if there are no widgets defined in the backend. -->
+	<!-- This content shows up if there are no widgets defined in the backend. TESTI2-->
 						
 	<div class="alert help">
 		<p><?php _e( 'Please activate some Widgets.', 'jointswp' );  ?></p>
