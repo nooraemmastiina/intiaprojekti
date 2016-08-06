@@ -130,7 +130,7 @@ HEADERKUVAT
  .background {
 	overflow:hidden;
     height: 63vh;
-	margin-bottom: 2.5em;
+	margin-bottom: 4.5em;
 }
 
 .etulogo {
@@ -158,6 +158,8 @@ hr.vaaka  {
   clear: both;
   display: block;
   position: relative;
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
 }
 
 hr.vaaka:before {
@@ -174,6 +176,25 @@ hr.vaaka:after {
 	   right: -24px;
 }
 
+.pysty {
+border-right: 2px solid #fde4a3;
+}
+
+.pysty:before {
+    content: url('../images/drop_top.png');
+    position: absolute;
+    top: -28px;
+    left: 49.5%;
+}
+
+.pysty:after {
+	content: url('../images/drop_bottom.png');
+	  position: absolute;
+	   bottom: -28px;
+		left: 49.5%;
+}
+.row {
+  position: relative;}
 
 /*********************
 ALKUPERÄISET TYYLIT
@@ -487,3 +508,10 @@ to display none.
   .respond-form,
   nav {
     display: none; } }
+	
+@media screen and (min-width: 40em) {
+.column, .columns {
+    padding-left: 1.9375rem;
+    padding-right: 1.9375rem;
+}
+}
