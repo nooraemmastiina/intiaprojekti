@@ -67,11 +67,15 @@ HEADER STYLES
 NAVIGAATIO OMAT
 *********************/  
 
-  .top-bar-section ul li.active > a:hover { color: #fff !important; }
+.top-bar-section ul li.active > a:hover { color: #fff !important; }
 
-  .top-bar-section li a:not(.button):hover {  color: #fff !important;  box-shadow: 0px -2px 0 #f77900 inset; }
+.top-bar-section li a:not(.button):hover {  color: #fff !important;  box-shadow: 0px -2px 0 #fff inset; }
 
 .top-bar-section li.active:not(.has-form) a:not(.button) { color: #fff !important; box-shadow: 0px -2px 0 #fff inset; }
+
+.menu-item-6 {
+background: url(../images/home_icon.png) no-repeat center center;
+}
 
 .right {
     float: inherit;
@@ -89,7 +93,7 @@ NAVIGAATIO OMAT
 }
 	
 .top-bar {
-    background: linear-gradient( rgba(38, 26, 66, 0.2), rgba(56, 37, 93, 0.0) );
+    background: linear-gradient( rgba(38, 26, 66, 0.3), rgba(56, 37, 93, 0.0) );
     overflow: visible;
     text-align:center;
     height: 5rem;
@@ -101,8 +105,9 @@ NAVIGAATIO OMAT
 
 .top-bar-section li:not(.has-form) a:not(.button) {
     color: #fff;
-    margin: 0 auto;
 	padding: 20px 0px 10px 0px;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
 }
 
   section.top-bar-section {
@@ -136,6 +141,8 @@ NAVIGAATIO OMAT
             transition: all 0.5s ease;
      } 
 	 
+	
+	 
 /*********************
 HEADERKUVAT
 *********************/
@@ -152,7 +159,16 @@ HEADERKUVAT
 
 /** Etusivun header **/
 .page-id-4 .background {
-	background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.6) ), url(../images/header_home.jpg) no-repeat center center;
+	background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_home.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** Ajankohtaista header **/
+.page-id-7 .background {
+	background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_news.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
