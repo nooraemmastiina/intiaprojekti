@@ -42,12 +42,11 @@
 	<body <?php body_class(); ?>>
 
 		<div class="off-canvas-wrapper">
-			
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-				
 				<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
-				
 				<div class="off-canvas-content" data-off-canvas-content>
+
+					<div class="background">
 					
 					<header class="header" role="banner">
 							

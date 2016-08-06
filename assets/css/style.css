@@ -20,25 +20,24 @@ H1, H2, H3, H4, H5 P STYLES
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
   
+H1 {
+color: #fff;
+}
+  
+  
 /*********************
 HEADER STYLES
 *********************/   
 
 /*********************
-Omat navityylit
+NAVIGAATIO OMAT
 *********************/  
 
   .top-bar-section ul li.active > a:hover { color: #fff !important; }
 
-  .top-bar-section li a:not(.button):hover { 
-      color: #fff !important; 
-      box-shadow: 0px -2px 0 #f77900 inset;
-  }
+  .top-bar-section li a:not(.button):hover {  color: #fff !important;  box-shadow: 0px -2px 0 #f77900 inset; }
 
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-      color: #fff !important; 
-      box-shadow: 0px -2px 0 #fff inset;
-  }
+.top-bar-section li.active:not(.has-form) a:not(.button) { color: #fff !important; box-shadow: 0px -2px 0 #fff inset; }
 
 .right {
     float: inherit;
@@ -46,6 +45,15 @@ Omat navityylit
     text-align: center;
 }
 
+.menu .active>a {
+    color: #fff;
+    background: transparent;
+	}
+
+.top-bar ul {
+    background: transparent !important;
+}
+	
 .top-bar {
     background: rgba(56, 37, 93, 0.7);
     overflow: visible;
@@ -58,7 +66,6 @@ Omat navityylit
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-    background: rgba(56, 37, 93, 0.66);
     color: #fff;
     margin: 0 auto;
 	padding: 10px 0px 10px 0px;
@@ -84,7 +91,6 @@ Omat navityylit
     clear: both;
     height: 1px;
     width: 100%;
-    background: red;
   }
 
   .top-bar-section ul li>a {
@@ -95,6 +101,20 @@ Omat navityylit
       -ms-transition: all 0.5s ease;
             transition: all 0.5s ease;
      } 
+	 
+/*********************
+HEADERKUVA
+*********************/
+	 
+.background {
+  overflow:hidden;
+  background: url(../images/header_home.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50vh;
+}
   
 /*********************
 HEADER STYLES

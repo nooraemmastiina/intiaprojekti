@@ -6,6 +6,9 @@ Template Name: Etusivu / Home
 
 <?php get_header(); ?>
 
+<h1><?php the_title(); ?></h1>
+</div>
+
 <div class="row">
 		  <div class="small-6 large-6 columns">
 		  	<h2>Uutiset</h2>
