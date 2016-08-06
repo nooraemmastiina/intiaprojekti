@@ -36,6 +36,13 @@ H1 {
 H2 {
 	color: #f29317;
 	font-size: 1.875em;
+	text-align:center;
+}
+
+H3{
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-size: 1.688em;
+	color: #261a42;
 }
 
 
@@ -44,6 +51,12 @@ H4 {
 	color: #fff;
 }
   
+body {
+font-family: 'Judson', serif;
+font-size: 1em;
+color: #1a1a1a;
+
+}
   
   
 /*********************
@@ -89,7 +102,7 @@ NAVIGAATIO OMAT
 .top-bar-section li:not(.has-form) a:not(.button) {
     color: #fff;
     margin: 0 auto;
-	padding: 20px 0px 20px 0px;
+	padding: 20px 0px 10px 0px;
 }
 
   section.top-bar-section {
@@ -134,7 +147,7 @@ HEADERKUVAT
 }
 
 .etulogo {
-	margin-top: 15px;
+	margin-top: 6vh;
 }
 
 /** Etusivun header **/
