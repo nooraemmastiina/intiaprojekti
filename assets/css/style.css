@@ -19,7 +19,83 @@ H1, H2, H3, H4, H5 P STYLES
 *********************/
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
+  
+/*********************
+HEADER STYLES
+*********************/   
 
+/*********************
+Omat navityylit
+*********************/  
+
+  .top-bar-section ul li.active > a:hover { color: #fff !important; }
+
+  .top-bar-section li a:not(.button):hover { 
+      color: #fff !important; 
+      box-shadow: 0px -2px 0 #f77900 inset;
+  }
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+      color: #fff !important; 
+      box-shadow: 0px -2px 0 #fff inset;
+  }
+
+.right {
+    float: inherit;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-bar {
+    background: rgba(56, 37, 93, 0.7);
+    overflow: visible;
+    text-align:center;
+    height: 3.5rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.875em;
+	letter-spacing: 0.075em;
+	font-weight:600;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: rgba(56, 37, 93, 0.66);
+    color: #fff;
+    margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+}
+
+  section.top-bar-section {
+    display: inline-block;
+  }
+
+.top-bar-section>ul>[role=separator] {
+    border-right: solid 1px white;
+    border-bottom: none;
+    border-top: none;
+    clear: none;
+    height: 4rem;
+    width: 0;
+    color: black;
+    background: rgba(56, 37, 93, 0.7);
+}
+
+.top-bar-section .divider, .top-bar-section [role=separator] {
+    border-top: solid 1px white;
+    clear: both;
+    height: 1px;
+    width: 100%;
+    background: red;
+  }
+
+  .top-bar-section ul li>a {
+    text-transform: uppercase;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+     } 
+  
 /*********************
 HEADER STYLES
 *********************/
