@@ -6,7 +6,9 @@ Template Name: Etusivu / Home
 
 <?php get_header(); ?>
 
-<h1><?php the_title(); ?></h1>
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/suomi-intia_logo.png" class="etulogo" alt="Suomi-Intia-Seura">
+<h1>Tervetuloa</h1>
+<h4>Suomi-Intia-Seuran kotisivuille</h4>
 </div>
 
 <div class="row">
