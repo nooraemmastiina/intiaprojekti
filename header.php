@@ -27,6 +27,9 @@
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+		<!--Omat-->
+		<link href='https://fonts.googleapis.com/css?family=Judson|Quando|Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+
 		<?php wp_head(); ?>
 
 		<!-- Drop Google Analytics here -->
