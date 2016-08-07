@@ -204,7 +204,7 @@ HEADERKUVAT
     background-size: cover;
 }
 
-/** myynnissa header **/
+/** info header **/
 .page-id-259 .background {
   background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_info.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -225,6 +225,15 @@ HEADERKUVAT
 /** liity header **/
 .page-id-278 .background {
   background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_join.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** hallitus ja yhteystiedot header **/
+.page-id-30 .background {
+	background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_contacts.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
