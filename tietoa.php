@@ -17,13 +17,6 @@
 
 					<?php get_template_part( 'parts/loop', 'page' ); ?>
 
-<!-- placeholder teksti -->
-<P>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra hendrerit ligula id imperdiet. Donec at consectetur ligula. Aenean quis ullamcorper augue, et semper magna. Curabitur imperdiet vitae velit vitae tristique. Fusce vestibulum, tellus sit amet egestas luctus, diam leo condimentum enim, sed laoreet felis mi a dolor. Nulla sagittis mi vel ex sagittis aliquet. Suspendisse potenti. Nullam semper cursus condimentum. Donec ac magna eget quam fermentum pulvinar nec faucibus mauris.
-
-</P>
-<!-- placeholder teksti päättyy -->
-
 <!-- tabs-->
 
 <ul class="tabs" data-tabs id="example-tabs">
@@ -35,28 +28,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra hendrer
   <li class="tabs-title"><a href="#panel6">Media</a></li>
 </ul>
 
+<hr class="vaaka-tietoa">
+
 <!-- tabs sisällöt-->
 
 <div class="tabs-content" data-tabs-content="example-tabs">
   <div class="tabs-panel is-active" id="panel1">
+    <h3>Faktoja Intiasta</h3>
     <p>Teksti + linkki</p>
   </div>
   <div class="tabs-panel" id="panel2">
+  <h3>Matkailijalle</h3>
  	<p>Teksti + linkki</p>
   	<p>Teksti + linkki</p>
   </div>
    <div class="tabs-panel" id="panel3">
+   <h3>Kulttuuri ja musiikki</h3>
     <p>Teksti + inkki</p>
     <p>Teksti + linkki</p>
   	<p>Teksti + linkki</p>
   </div>
    <div class="tabs-panel" id="panel4">
+    <h3>Järjestöt ja valtiolliset</h3>
     <p>Teksti + linkki</p>
   </div>
    <div class="tabs-panel" id="panel5">
+    <h3>Tietoa Suomesta</h3>
     <p>Teksti + linkki</p>
   </div>
    <div class="tabs-panel" id="panel6">
+    <h3>Media</h3>
     <p>Teksti + linkki</p>
   </div>
 </div>

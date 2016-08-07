@@ -10,6 +10,7 @@
 		<div class="row">
 	
 		    <div class="large-9 large-centered columns" role="main">
+		    	<h2> Kuvia menneistä tapahtumista</h2>
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

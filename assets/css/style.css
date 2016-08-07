@@ -279,6 +279,66 @@ MYYNNISSA
    margin-bottom: 10px;}
 
 /*********************
+TIETOA
+*********************/
+
+.tabs {
+    margin: 0;
+    list-style-type: none;
+    background: #fefefe;
+    border: none;
+}
+
+.tabs-title>a {
+    font-family: 'Source Sans Pro', sans-serif; 
+    color: #38255d;
+    display: block;
+    padding: none;
+    line-height: 1;
+    font-size: 13px !important;
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+    background: #fefefe;
+    font-weight: bold;
+}
+
+.tabs-content {
+    background: #fefefe;
+    transition: all .5s ease;
+    border: none;
+    border-top: 0;
+}
+
+/*
+Tietoa viivat*/
+
+hr.vaaka-tietoa {
+    border: 0 solid #fde4a3;
+    border-top-width: 2px;
+    width: 100%;
+    clear: both;
+    display: block;
+    position: relative;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+hr.vaaka-tietoa:before {
+  content: url('../images/drop_left.png');
+    position: absolute;
+     bottom: -10px;
+     left: -24px;
+}
+
+hr.vaaka-tietoa:after {
+  content: url('../images/drop_right.png');
+    position: absolute;
+     bottom: -10px;
+     right: -24px;
+}
+
+/*********************
 ALKUPERÄISET TYYLIT
 *********************/
 
