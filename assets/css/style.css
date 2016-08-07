@@ -285,6 +285,22 @@ border-right: 2px solid #fde4a3;
 }
 
 /*********************
+AJANKOHTAISTA
+*********************/
+
+.button {
+	background: #38255d;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 0.938em !important;
+	border-radius: 4px;
+}
+
+.button:focus, .button:hover {
+    background: #c3c8e7;
+}
+
+/*********************
 MYYNNISSA 
 *********************/
 .product_image {
