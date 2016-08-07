@@ -175,6 +175,52 @@ HEADERKUVAT
     background-size: cover;
 }
 
+/** Historia header **/
+.page-id-266 .background {
+  background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_history.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** myynnissa header **/
+.page-id-256 .background {
+  background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_sale.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** myynnissa header **/
+.page-id-259 .background {
+  background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_info.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** kuvia header **/
+.page-id-275 .background {
+  background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_photos.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** liity header **/
+.page-id-278 .background {
+  background: linear-gradient( rgba(56, 37, 93, 0.8), rgba(56, 37, 93, 0.7) ), url(../images/header_join.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 
 /*********************
 VIIVAT
