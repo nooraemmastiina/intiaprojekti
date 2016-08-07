@@ -12,10 +12,10 @@
 		<div id="inner-content" class="row">
 	
 		    <main id="main" class="large-9 large-centered columns" role="main">
-				
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'parts/loop', 'page' ); ?>
+              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+          <?php get_template_part( 'parts/loop', 'page' ); ?>
 
 <!-- tabs-->
 
@@ -34,31 +34,83 @@
 
 <div class="tabs-content" data-tabs-content="example-tabs">
   <div class="tabs-panel is-active" id="panel1">
+
     <h3>Faktoja Intiasta</h3>
-    <p>Teksti + linkki</p>
+
+    <?php  $args = array( 'post_type' => 'tietoa', 'posts_per_page' => 10 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php the_title(); ?>
+      <?php echo '<div class="entry-content">'; ?>
+      <?php the_content(); ?>
+      <?php  echo '</div>';?>
+      <?php endwhile; ?>
+
   </div>
   <div class="tabs-panel" id="panel2">
   <h3>Matkailijalle</h3>
- 	<p>Teksti + linkki</p>
-  	<p>Teksti + linkki</p>
+
+  	 <?php  $args = array( 'post_type' => 'matkailijalle', 'posts_per_page' => 10 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php the_title(); ?>
+      <?php echo '<div class="entry-content">'; ?>
+      <?php the_content(); ?>
+      <?php  echo '</div>';?>
+      <?php endwhile; ?>
+
   </div>
    <div class="tabs-panel" id="panel3">
    <h3>Kulttuuri ja musiikki</h3>
-    <p>Teksti + inkki</p>
-    <p>Teksti + linkki</p>
-  	<p>Teksti + linkki</p>
+
+      <?php  $args = array( 'post_type' => 'kulttuuri_musiikki', 'posts_per_page' => 10 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php the_title(); ?>
+      <?php echo '<div class="entry-content">'; ?>
+      <?php the_content(); ?>
+      <?php  echo '</div>';?>
+      <?php endwhile; ?>
+
   </div>
    <div class="tabs-panel" id="panel4">
     <h3>Järjestöt ja valtiolliset</h3>
-    <p>Teksti + linkki</p>
+    
+    <?php  $args = array( 'post_type' => 'jarjestot_valtiolliset', 'posts_per_page' => 10 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php the_title(); ?>
+      <?php echo '<div class="entry-content">'; ?>
+      <?php the_content(); ?>
+      <?php  echo '</div>';?>
+      <?php endwhile; ?>
+
   </div>
    <div class="tabs-panel" id="panel5">
     <h3>Tietoa Suomesta</h3>
-    <p>Teksti + linkki</p>
+    
+  <?php  $args = array( 'post_type' => 'tietoa_suomesta', 'posts_per_page' => 10 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php the_title(); ?>
+      <?php echo '<div class="entry-content">'; ?>
+      <?php the_content(); ?>
+      <?php  echo '</div>';?>
+      <?php endwhile; ?>
+
   </div>
    <div class="tabs-panel" id="panel6">
     <h3>Media</h3>
-    <p>Teksti + linkki</p>
+    
+    <?php  $args = array( 'post_type' => 'media', 'posts_per_page' => 10 ); ?>
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <?php the_title(); ?>
+      <?php echo '<div class="entry-content">'; ?>
+      <?php the_content(); ?>
+      <?php  echo '</div>';?>
+      <?php endwhile; ?>
+
   </div>
 </div>
 
