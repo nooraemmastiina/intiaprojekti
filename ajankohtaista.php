@@ -37,6 +37,7 @@ Template Name: Ajankohtaista / News
             <h3 class="entry-title"><?php the_title(); ?></h3>
             <div class="entry-content">
               <?php the_content(); ?>
+              <?php if( get_field('ilmoittaudu_linkki') ): ?> <a class="small button" href="<?php the_field('ilmoittaudu_linkki')?>">Ilmoittaudu</a><?php endif; ?><br>
               <?php the_post_thumbnail('large', array('class' => 'large')); ?>
             </div>
             <?php endwhile;?>
