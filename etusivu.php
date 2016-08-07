@@ -52,36 +52,39 @@ Template Name: Etusivu / Home
 		  <a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#tapahtumat"><h2>Tulevat tapahtumat</h2></a>
 
 
-<div class="orbit" data-orbit="">
-<p><button class="orbit-previous"><span class="show-for-sr">Edellinen</span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_left.png"></button>
-   <button class="orbit-next"><span class="show-for-sr">Seuraava</span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_right.png"></button></p>
-<a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#tapahtumat"><ul class="orbit-container">
+		<div class="orbit" data-orbit="">
+		<p><button class="orbit-previous"><span class="show-for-sr">Edellinen</span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_left.png"></button>
+		   <button class="orbit-next"><span class="show-for-sr">Seuraava</span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow_right.png"></button></p>
+		<a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#tapahtumat"><ul class="orbit-container">
+					<?php 
+				$args = array('post_type' => 'events');
+				$loop = new WP_Query( $args );
+				 
+				while ( $loop->have_posts() ) : $loop->the_post();
+				?>
 
-	<?php 
-$args = array('post_type' => 'events');
-$loop = new WP_Query( $args );
- 
-while ( $loop->have_posts() ) : $loop->the_post();
-?>
 
-
-<li class="orbit-slide">
-<div class="text-center">
-<h3 class="text-center"><?php the_title(); ?></h3>
-<?php echo the_post_thumbnail(array(700,400)); ?></div>
-</li>
-<?php endwhile;?>
-
+				<li class="orbit-slide">
+				<div class="text-center">
+				<h3 class="text-center"><?php the_title(); ?></h3>
+				<?php echo the_post_thumbnail(array(700,400)); ?></div>
+				</li>
+				<?php endwhile;?>
 </ul></a>
 </div>
 
 	 </div>
 
-		  <div class="small-12 large-6 columns" data-equalizer-watch>
-		  	<h2>Haluatko jäseneksi</h2>
-		  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum lacinia ligula, sed pulvinar sem interdum vel. Donec eget massa in erat congue pretium. Curabitur eu aliquet leo. Nulla eu iaculis ipsum, nec aliquam augue. Donec consequat massa massa, vitae sodales metus hendrerit a. Quisque ac mauris sit amet risus molestie tincidunt vitae a diam. Vestibulum non luctus neque.
+          <div class="small-12 large-6 columns" data-equalizer-watch>            
+          <h2>Haluatko jäseneksi</h2>
+		 <p>Seura järjestää monenlaista Intiaan ja intialaiseen kulttuuriin liittyvää toimintaa, muun muassa seminaareja, esitelmiä,
+		kursseja ja erilaisia tapahtumia. Tiedotamme tilaisuuksista uutiskirjeissä, joita seuran jäsenet saavat neljä kertaa
+		vuodessa. Uutiskirjeissä kerrotaan myös muista Intiaan liittyvistä tapahtumista, uutisista ja mielenkiintoisista
+		aiheista.</p>
 
-		  </div>
+		<p>Olet lämpimästi tervetullut mukaan seuran toimintaan!</p>
+		<div class="text-center"><a class="large button" href="<?php echo get_site_url(); ?>/fi/jaseneksi/">Liity jäseneksi!</a></div>
+	</div> 
 </div>
 
 
