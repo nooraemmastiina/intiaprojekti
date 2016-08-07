@@ -3,99 +3,69 @@
 ?>
 
 <?php get_header(); ?>
-			
-	<div id="content">
-	
-		<div id="inner-content" class="row">
-	
-		    <main id="main" class="large-10 large-centered columns" role="main">
+
+<h1><?php the_title(); ?></h1>
+</div>
+
+		    <div class="large-10 large-centered columns" role="main">
+
+		    	<h2>Myynnissä olevia tuotteita</h2>
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<?php get_template_part( 'parts/loop', 'page' ); ?>
 
-<!-- placeholder teksti -->
-<P>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra hendrerit ligula id imperdiet. Donec at consectetur ligula. Aenean quis ullamcorper augue, et semper magna. Curabitur imperdiet vitae velit vitae tristique. Fusce vestibulum, tellus sit amet egestas luctus, diam leo condimentum enim, sed laoreet felis mi a dolor. Nulla sagittis mi vel ex sagittis aliquet. Suspendisse potenti. Nullam semper cursus condimentum. Donec ac magna eget quam fermentum pulvinar nec faucibus mauris.
+			</div>
 
-</P>
-<!-- placeholder teksti päättyy -->	
-
-<!-- tuotekuvat ja tekstit -->		
+<!--Product images and texts -->	
+<!--Product 1 -->	
 
 <div class="row">
-  <div class="large-4 columns">
-  <?php 
+  <div class="large-4 columns product_image">
+  		<?php 
 
-$image = get_field('kuva_tuotteesta');
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
+		$image = get_field('picture_of_the_product_1');
+		$size = 'medium'; // (thumbnail, medium, large, full or custom size)
 
-if( $image ) {
+		if( $image ) {
+		echo wp_get_attachment_image( $image, $size );
+		}
+		?>	
 
-	echo wp_get_attachment_image( $image, $size );
-}
-?>	
+	</div>
+
+ 	<div class="large-8 columns">
+  	<h3><?php the_field('product_1_name');?></h3>
+  	<p><?php the_field('info_about_the_product_1_');?></p>
+	<p><?php the_field('price_of_the_product_1');?></p>
+	</div>
 
 </div>
 
-  <div class="large-8 columns">
-  	<h3> Tuotteen nimi</h3>
-  	<p> Tuotteen lisätiedot</p>
-	<p> Hinta </p></div>
-
-</div>
-
+<!--Product 2 -->	
 
 <div class="row">
-  <div class="large-4 columns">
-  <?php 
+  	<div class="large-4 columns product_image">
+ 	 <?php 
+		$image = get_field('product_2_image_');
+		$size = 'medium'; // (thumbnail, medium, large, full or custom size)
+		if( $image ) {
+		echo wp_get_attachment_image( $image, $size );
+		}
+	?>	
+	</div>
 
-$image = get_field('kuva_tuotteesta_2');
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
-
-if( $image ) {
-
-	echo wp_get_attachment_image( $image, $size );
-}
-?>	
-
-</div>
-
-  <div class="large-8 columns">
-  	<h3> Tuotteen nimi</h3>
-  	<p> Tuotteen lisätiedot</p>
-	<p> Hinta </p></div>
+ 	<div class="large-8 columns">
+  	<h3><?php the_field('product_2_name_');?></h3>
+  	<p><?php the_field('product_2:_more_info_');?></p>
+	<p><?php the_field('product_2_price_');?></p>
+	</div>
 
 </div>
 
-<div class="row">
-  <div class="large-4 columns">
-  <?php 
 
-$image = get_field('kuva_tuotteesta_3');
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
-
-if( $image ) {
-
-	echo wp_get_attachment_image( $image, $size );
-}
-?>	
-
-</div>
-
-  <div class="large-8 columns">
-  	<h3> Tuotteen nimi</h3>
-  	<p> Tuotteen lisätiedot</p>
-	<p> Hinta </p></div>
-
-</div>
 				<?php endwhile; endif; ?>							
 
-			</main> <!-- end #main -->
-		    
-		</div> <!-- end #inner-content -->
-	
-	</div> <!-- end #content -->
 
 <?php get_footer(); ?>
 

@@ -3,12 +3,13 @@
 ?>
 
 <?php get_header(); ?>
-			
-	<div id="content">
+
+<h1><?php the_title(); ?></h1>
+</div>
 	
-		<div id="inner-content" class="row">
+		<div class="row">
 	
-		    <main id="main" class="large-9 large-centered columns" role="main">
+		    <div class="large-9 large-centered columns" role="main">
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -17,11 +18,9 @@
 					
 				<?php endwhile; endif; ?>							
 
-			</main> <!-- end #main -->
+			</div> 
 		    
-		</div> <!-- end #inner-content -->
-	
-	</div> <!-- end #content -->
+		</div> 
 
 <?php get_footer(); ?>
 
