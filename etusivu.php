@@ -13,21 +13,19 @@ Template Name: Etusivu / Home
 
 <div class="row" data-equalizer>
 		  <div class="small-12 large-6 columns pysty" data-equalizer-watch>
-		 <a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset"><h2>Uutiset</h2>  
+		 <a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset"><h2>Uutiset</h2></a>  
 				<?php 
 				$args = array('post_type' => 'news');
 				$loop = new WP_Query( $args );
 				 
 				while ( $loop->have_posts() ) : $loop->the_post();
 				?>
-				<h3 class="entry-title"><?php the_title(); ?></h3>
+				<a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset"><h3 class="entry-title"><?php the_title(); ?></h3></a>
 				<div class="entry-content">
-					<?php the_post_thumbnail( array(180), array('class' => 'alignleft')  ); ?>
+					<a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset"><?php the_post_thumbnail( array(180), array('class' => 'alignleft')  ); ?></a>
 				<?php the_content(); ?>
 				</div>
 				<?php endwhile;?>
-
-			</a>
 			</div>           
 
 			<div class="small-12 large-6 columns" data-equalizer-watch>             
@@ -82,8 +80,6 @@ while ( $loop->have_posts() ) : $loop->the_post();
 		  <div class="small-12 large-6 columns" data-equalizer-watch>
 		  	<h2>Haluatko jäseneksi</h2>
 		  	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum lacinia ligula, sed pulvinar sem interdum vel. Donec eget massa in erat congue pretium. Curabitur eu aliquet leo. Nulla eu iaculis ipsum, nec aliquam augue. Donec consequat massa massa, vitae sodales metus hendrerit a. Quisque ac mauris sit amet risus molestie tincidunt vitae a diam. Vestibulum non luctus neque.
-
-
 
 		  </div>
 </div>
