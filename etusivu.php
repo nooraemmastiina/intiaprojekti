@@ -15,7 +15,9 @@ Template Name: Etusivu / Home
 		  <div class="small-12 large-6 columns pysty" data-equalizer-watch>
 		 <a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset"><h2>Uutiset</h2></a>  
 				<?php 
-				$args = array('post_type' => 'news');
+				$args = array(
+					'post_type' => 'news',
+					'showposts' => 2);
 				$loop = new WP_Query( $args );
 				 
 				while ( $loop->have_posts() ) : $loop->the_post();
@@ -26,6 +28,8 @@ Template Name: Etusivu / Home
 				<?php the_content(); ?>
 				</div>
 				<?php endwhile;?>
+
+				<p><a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset">Lue lisää uutisia &#8594;</a></p>
 			</div>           
 
 			<div class="small-12 large-6 columns" data-equalizer-watch>             
