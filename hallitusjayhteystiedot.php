@@ -9,8 +9,8 @@ Template Name: Hallitus ja yhteystiedot / Contacts
 <h1><?php the_title(); ?></h1>
 </div>
 
-<div class="row" data-equalizer>
-      <div class="small-12 large-6 columns pysty" data-equalizer-watch>
+<div class="row" data-equalizer data-equalize-on="medium">
+      <div class="small-12 medium-6 large-6 columns pysty" data-equalizer-watch>
         <h2>Hallitus</h2>
               <p>Suomi-Intia-Seuraa johtaa hallitus, joka valitaan vuosittain seuran jäsenille 
               avoimessa syyskokouksessa. Kutsu syyskokoukseen lähetetään kaikille jäsenille. Kaikilla seuran jäsenillä on kokouksessa äänioikeus.
@@ -21,7 +21,7 @@ Template Name: Hallitus ja yhteystiedot / Contacts
 
       </div>           
 
-      <div class="small-12 large-6 columns" data-equalizer-watch>
+      <div class="small-12 medium-6 large-6 columns" data-equalizer-watch>
       <h2>Yhteystiedot</h2>  
       <div class="small-12 large-7 columns">             
           <p>Suomi-Intia-Seura ry.</p>

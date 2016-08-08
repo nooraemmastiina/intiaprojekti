@@ -11,8 +11,8 @@ Template Name: Etusivu / Home
 <h4>Suomi-Intia-Seuran kotisivuille</h4>
 </div>
 
-<div class="row" data-equalizer>
-		  <div class="small-12 large-6 columns pysty" data-equalizer-watch>
+<div class="row" data-equalizer data-equalize-on="medium">
+		  <div class="small-12 medium-6 large-6 columns pysty" data-equalizer-watch>
 		 <a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset"><h2>Uutiset</h2></a>  
 				<?php 
 				$args = array(
@@ -32,7 +32,7 @@ Template Name: Etusivu / Home
 				<p><a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#uutiset">Lue lisää uutisia &#8594;</a></p>
 			</div>           
 
-			<div class="small-12 large-6 columns" data-equalizer-watch>             
+			<div class="small-12 medium-6 large-6 columns" data-equalizer-watch>             
 				<h2>Tietoa Intiasta</h2>    
 			<p>Suomi-Intia-Seura ry. on ystävyysseura, joka toimii Intiasta ja intialaisesta kulttuurista
 			kiinnostuneiden toiminnallisena yhteisönä sekä yhdyssiteenä Suomessa asuvien intialaisten välillä.
@@ -51,8 +51,8 @@ Template Name: Etusivu / Home
 
 <hr class="vaaka">
 
-<div class="row" data-equalizer>
-		  <div class="small-12 large-6 columns pysty" data-equalizer-watch>
+<div class="row" data-equalizer data-equalize-on="medium">
+		  <div class="small-12 medium-6 large-6 columns pysty" data-equalizer-watch>
 		  <a href="<?php echo get_site_url(); ?>/fi/ajankohtaista#tapahtumat"><h2>Tulevat tapahtumat</h2></a>
 
 
@@ -79,7 +79,7 @@ Template Name: Etusivu / Home
 
 	 </div>
 
-          <div class="small-12 large-6 columns" data-equalizer-watch>            
+          <div class="small-12 medium-6 large-6 columns" data-equalizer-watch>            
           <h2>Haluatko jäseneksi</h2>
 		 <p>Seura järjestää monenlaista Intiaan ja intialaiseen kulttuuriin liittyvää toimintaa, muun muassa seminaareja, esitelmiä,
 		kursseja ja erilaisia tapahtumia. Tiedotamme tilaisuuksista uutiskirjeissä, joita seuran jäsenet saavat neljä kertaa

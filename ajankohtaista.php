@@ -9,8 +9,8 @@ Template Name: Ajankohtaista / News
 <h1><?php the_title(); ?></h1>
 </div>
 
-<div class="row" data-equalizer>
-      <div class="small-12 large-6 columns pysty" data-equalizer-watch>
+<div class="row" data-equalizer data-equalize-on="medium">
+      <div class="small-12 medium-6 large-6 columns pysty" data-equalizer-watch>
         <a name="uutiset"><h2>Uutiset</h2></a>
             <?php 
             $args = array('post_type' => 'news');
@@ -26,7 +26,7 @@ Template Name: Ajankohtaista / News
             <?php endwhile;?>
       </div>           
 
-      <div class="small-12 large-6 columns" data-equalizer-watch>             
+      <div class="small-12 medium-6 large-6 columns" data-equalizer-watch>             
         <a name="tapahtumat"><h2>Tulevat tapahtumat</h2></a>   
             <?php 
             $args = array('post_type' => 'events');
@@ -37,7 +37,7 @@ Template Name: Ajankohtaista / News
             <h3 class="entry-title"><?php the_title(); ?></h3>
             <div class="entry-content">
               <?php the_content(); ?>
-              <?php if( get_field('ilmoittaudu_linkki') ): ?> <a class="button" href="<?php the_field('ilmoittaudu_linkki')?>">Ilmoittaudu</a><?php endif; ?><br>
+              <?php if( get_field('ilmoittaudu_linkki') ): ?> <a class="small button" href="<?php the_field('ilmoittaudu_linkki')?>">Ilmoittaudu</a><?php endif; ?><br>
               <?php the_post_thumbnail('large', array('class' => 'large')); ?>
             </div>
             <?php endwhile;?>

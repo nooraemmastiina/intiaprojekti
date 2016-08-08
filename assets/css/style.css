@@ -297,6 +297,10 @@ border-right: 2px solid #fde4a3;
 	background: transparent;
 }
 
+.orbit {
+max-height: 600px;
+}
+
 /*********************
 AJANKOHTAISTA
 *********************/
@@ -311,6 +315,10 @@ AJANKOHTAISTA
 .button:focus, .button:hover {
     background: #c3c8e7;
 }
+
+.entry-content {
+    margin-bottom: 2em;
+	}
 
 /*********************
 MYYNNISSA 
@@ -376,6 +384,113 @@ hr.vaaka-tietoa:after {
     position: absolute;
      bottom: -10px;
      right: -24px;
+}
+
+
+/*********************
+RESPONSIIVISUUS
+*********************/
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+
+hr.vaaka  {
+  display: none;
+}
+
+hr.vaaka:before {
+  display: none;
+}
+
+hr.vaaka:after {
+  display: none;
+}
+
+.pysty {
+border-right: 0px;
+height: auto;
+}
+
+.pysty:before {
+    content: "";
+    position: relative;
+}
+
+.pysty:after {
+    content: "";
+    position: relative;
+}
+
+.orbit {
+  margin-bottom: 2em;
+}
+
+.show-for-medium-up {
+  display: none;
+}
+
+.columns {
+margin-bottom: 1em;
+}
+
+.menu-icon {
+    width: 27px;
+    height: 11px;
+	color: #fff !important;
+    background: #38255d;
+	position: absolute;
+	right: 1.5em;
+	top: 1.5em;
+}
+
+.off-canvas {
+    background: #38255d;
+    color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	letter-spacing: 0.075em;
+	font-weight:600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+	text-align:center;
+}
+
+ul.off-canvas-list li a {
+    border-bottom: 1px solid #0F3A36;
+}
+
+.off-canvas a {
+    color: #fff;
+}
+
+H1 {
+    margin-top: 13vh;
+    font-size: 2em;
+}
+
+.background {
+    height: 47vh;
+    margin-bottom: 1.5em;
+}
+
+.etulogo {
+    margin-top: 0;
+	width:25%;
+}
+
+.top-bar {
+    height: 2rem;
+}
+
+.page-id-4 H1 {
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+.off-canvas-wrapper {
+    background: #38255d;
+}
+
 }
 
 /*********************
