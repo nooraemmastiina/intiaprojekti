@@ -71,7 +71,7 @@ function joints_gallery_style($css) {
 function joints_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '<a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'jointswp') . get_the_title($post->ID).'">'. __('... Read more &raquo;', 'jointswp') .'</a>';
+return '<a class="excerpt-read-more" href="'. get_permalink( get_page_by_path( 'ajankohtaista' ) ) . '" title="'. __('Lue uutinen ', 'jointswp') . get_the_title($post->ID).'">'. __('...', 'jointswp');
 }
 
 //  Stop WordPress from using the sticky class (which conflicts with Foundation), and style WordPress sticky posts using the .wp-sticky class instead

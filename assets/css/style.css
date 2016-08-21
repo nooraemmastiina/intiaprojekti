@@ -298,7 +298,11 @@ border-right: 2px solid #fde4a3;
 }
 
 .orbit {
-max-height: 600px;
+max-height: 400px !important;
+}
+
+.orbit-slide img{
+      max-height: 400px !important;
 }
 
 /*********************
