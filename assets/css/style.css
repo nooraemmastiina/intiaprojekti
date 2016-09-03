@@ -67,6 +67,10 @@ color: #1a1a1a;
 
 }
   
+a h2:hover, a h3:hover{ 
+color: #fcca47;
+ }  
+  
   
 /*********************
 HEADER STYLES
@@ -335,6 +339,7 @@ AJANKOHTAISTA
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	border-radius: 4px;
+	margin: 0 0 0.5rem;
 }
 
 .button:focus, .button:hover {
@@ -556,7 +561,8 @@ POSTS & CONTENT STYLES
 
 .entry-content img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 1em;  }
 
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
