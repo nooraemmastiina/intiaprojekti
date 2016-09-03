@@ -17,7 +17,7 @@
 					<?php get_template_part( 'parts/loop', 'page' ); ?>
 
 					<h2>Liity jäseneksi</h2>
-					<P> Tähän tulee lomake </P>
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5A1odfo2mnbtMI-9RKjccauIBMy2dLbIInl6PuuNv6qam2w/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Ladataan...</iframe>
 
 				<?php endwhile; endif; ?>							
 
